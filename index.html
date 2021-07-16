@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random person generator</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Random person generator</a>
+                </div>
+            </nav>
+        </div>
+        <div class="profileCard">
+            <div class="cardBackground"></div>
+            <div class="profilePicContainer">
+                <img id="personPic" class="profileImage" src="">
+                <div id="personName"></div>
+            </div>
+            <div class="profileDetails">
+                <div class="profileLocation">Location: <span id="personLocation"></span> </div>
+                <div class="profileEmail">Email: <span id="personEmail"></span> </div>
+                <div class="profilePhone">Phone: <span id="personNumber"></span> </div>
+            </div>
+
+            <div class="buttonContainer">
+                <button class="waves-effect waves-light btn" onclick="getNewPerson();" id="createPersonButton">Create New Person</button>
+            </div>
+
+        </div>
+
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">API Showcase</h5>
+                        <p class="grey-text text-lighten-4">Generate a random person via API</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="js/generate.js"></script>
+    </body>
+
+</html>
